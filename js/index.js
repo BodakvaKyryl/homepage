@@ -38,3 +38,14 @@ function scrollActiveSelection() {
 }
 
 window.addEventListener('scroll', scrollActiveSelection)
+
+function scrollTop() {
+	const scrollTopElement = document.getElementById('scrollTop')
+	if (this.scrollY >= 560) {
+		scrollTopElement.classList.add('show-scroll')
+	} else {
+		scrollTopElement.classList.remove('show-scroll')
+	}
+}
+
+window.addEventListener('scroll', scrollTop)
